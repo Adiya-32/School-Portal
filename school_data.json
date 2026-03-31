@@ -1,0 +1,962 @@
+[
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Математика",
+    "grade": 5,
+    "type": "ДЗ",
+    "date": "2026-03-03"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Математика",
+    "grade": 3,
+    "type": "СОР",
+    "date": "2026-03-04"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Математика",
+    "grade": 3,
+    "type": "СОЧ",
+    "date": "2026-03-07"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Математика",
+    "grade": 3,
+    "type": "СОР",
+    "date": "2026-03-10"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Математика",
+    "grade": 3,
+    "type": "СОР",
+    "date": "2026-03-13"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Математика",
+    "grade": 4,
+    "type": "Классная работа",
+    "date": "2026-03-16"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Математика",
+    "grade": 3,
+    "type": "СОЧ",
+    "date": "2026-03-21"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Математика",
+    "grade": 4,
+    "type": "СОЧ",
+    "date": "2026-03-24"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Математика",
+    "grade": 3,
+    "type": "ДЗ",
+    "date": "2026-03-27"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Математика",
+    "grade": 1,
+    "type": "ДЗ",
+    "date": "2026-03-30"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Физика",
+    "grade": 3,
+    "type": "ДЗ",
+    "date": "2026-03-02"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Физика",
+    "grade": 3,
+    "type": "ДЗ",
+    "date": "2026-03-04"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Физика",
+    "grade": 3,
+    "type": "СОЧ",
+    "date": "2026-03-08"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Физика",
+    "grade": 3,
+    "type": "ДЗ",
+    "date": "2026-03-11"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Физика",
+    "grade": 4,
+    "type": "СОР",
+    "date": "2026-03-14"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Физика",
+    "grade": 2,
+    "type": "Классная работа",
+    "date": "2026-03-16"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Физика",
+    "grade": 3,
+    "type": "СОР",
+    "date": "2026-03-21"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Физика",
+    "grade": 2,
+    "type": "Классная работа",
+    "date": "2026-03-23"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Физика",
+    "grade": 3,
+    "type": "СОР",
+    "date": "2026-03-27"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Физика",
+    "grade": 3,
+    "type": "СОЧ",
+    "date": "2026-03-29"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Информатика",
+    "grade": 4,
+    "type": "ДЗ",
+    "date": "2026-03-01"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Информатика",
+    "grade": 3,
+    "type": "СОР",
+    "date": "2026-03-06"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Информатика",
+    "grade": 3,
+    "type": "ДЗ",
+    "date": "2026-03-08"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Информатика",
+    "grade": 3,
+    "type": "ДЗ",
+    "date": "2026-03-12"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Информатика",
+    "grade": 3,
+    "type": "Классная работа",
+    "date": "2026-03-13"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Информатика",
+    "grade": 5,
+    "type": "ДЗ",
+    "date": "2026-03-16"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Информатика",
+    "grade": 5,
+    "type": "ДЗ",
+    "date": "2026-03-19"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Информатика",
+    "grade": 3,
+    "type": "СОЧ",
+    "date": "2026-03-23"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Информатика",
+    "grade": 3,
+    "type": "СОЧ",
+    "date": "2026-03-26"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "Информатика",
+    "grade": 3,
+    "type": "СОР",
+    "date": "2026-03-29"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "История",
+    "grade": 3,
+    "type": "СОР",
+    "date": "2026-03-01"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "История",
+    "grade": 4,
+    "type": "СОР",
+    "date": "2026-03-06"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "История",
+    "grade": 3,
+    "type": "ДЗ",
+    "date": "2026-03-09"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "История",
+    "grade": 1,
+    "type": "СОЧ",
+    "date": "2026-03-11"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "История",
+    "grade": 5,
+    "type": "СОР",
+    "date": "2026-03-15"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "История",
+    "grade": 3,
+    "type": "Классная работа",
+    "date": "2026-03-18"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "История",
+    "grade": 2,
+    "type": "Классная работа",
+    "date": "2026-03-20"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "История",
+    "grade": 3,
+    "type": "ДЗ",
+    "date": "2026-03-24"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "История",
+    "grade": 3,
+    "type": "СОР",
+    "date": "2026-03-27"
+  },
+  {
+    "student_id": "001",
+    "student_name": "Алихан",
+    "subject": "История",
+    "grade": 4,
+    "type": "СОР",
+    "date": "2026-03-29"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Математика",
+    "grade": 4,
+    "type": "СОР",
+    "date": "2026-03-03"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Математика",
+    "grade": 5,
+    "type": "Классная работа",
+    "date": "2026-03-05"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Математика",
+    "grade": 4,
+    "type": "ДЗ",
+    "date": "2026-03-08"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Математика",
+    "grade": 5,
+    "type": "СОР",
+    "date": "2026-03-11"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Математика",
+    "grade": 5,
+    "type": "СОЧ",
+    "date": "2026-03-15"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Математика",
+    "grade": 5,
+    "type": "СОР",
+    "date": "2026-03-18"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Математика",
+    "grade": 4,
+    "type": "ДЗ",
+    "date": "2026-03-20"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Математика",
+    "grade": 4,
+    "type": "Классная работа",
+    "date": "2026-03-23"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Математика",
+    "grade": 3,
+    "type": "ДЗ",
+    "date": "2026-03-25"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Математика",
+    "grade": 5,
+    "type": "СОР",
+    "date": "2026-03-29"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Физика",
+    "grade": 5,
+    "type": "СОЧ",
+    "date": "2026-03-02"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Физика",
+    "grade": 4,
+    "type": "СОР",
+    "date": "2026-03-04"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Физика",
+    "grade": 5,
+    "type": "Классная работа",
+    "date": "2026-03-07"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Физика",
+    "grade": 5,
+    "type": "СОР",
+    "date": "2026-03-11"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Физика",
+    "grade": 5,
+    "type": "СОЧ",
+    "date": "2026-03-15"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Физика",
+    "grade": 5,
+    "type": "ДЗ",
+    "date": "2026-03-18"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Физика",
+    "grade": 5,
+    "type": "ДЗ",
+    "date": "2026-03-20"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Физика",
+    "grade": 4,
+    "type": "ДЗ",
+    "date": "2026-03-23"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Физика",
+    "grade": 5,
+    "type": "Классная работа",
+    "date": "2026-03-25"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Физика",
+    "grade": 5,
+    "type": "СОЧ",
+    "date": "2026-03-30"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Информатика",
+    "grade": 4,
+    "type": "СОР",
+    "date": "2026-03-03"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Информатика",
+    "grade": 5,
+    "type": "СОЧ",
+    "date": "2026-03-04"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Информатика",
+    "grade": 5,
+    "type": "Классная работа",
+    "date": "2026-03-07"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Информатика",
+    "grade": 4,
+    "type": "Классная работа",
+    "date": "2026-03-12"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Информатика",
+    "grade": 5,
+    "type": "Классная работа",
+    "date": "2026-03-15"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Информатика",
+    "grade": 4,
+    "type": "Классная работа",
+    "date": "2026-03-16"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Информатика",
+    "grade": 5,
+    "type": "СОЧ",
+    "date": "2026-03-19"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Информатика",
+    "grade": 5,
+    "type": "ДЗ",
+    "date": "2026-03-24"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Информатика",
+    "grade": 5,
+    "type": "СОР",
+    "date": "2026-03-26"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "Информатика",
+    "grade": 4,
+    "type": "Классная работа",
+    "date": "2026-03-29"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "История",
+    "grade": 4,
+    "type": "СОР",
+    "date": "2026-03-02"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "История",
+    "grade": 5,
+    "type": "Классная работа",
+    "date": "2026-03-04"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "История",
+    "grade": 5,
+    "type": "СОЧ",
+    "date": "2026-03-08"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "История",
+    "grade": 5,
+    "type": "СОЧ",
+    "date": "2026-03-11"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "История",
+    "grade": 5,
+    "type": "Классная работа",
+    "date": "2026-03-15"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "История",
+    "grade": 5,
+    "type": "СОЧ",
+    "date": "2026-03-17"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "История",
+    "grade": 5,
+    "type": "СОР",
+    "date": "2026-03-20"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "История",
+    "grade": 4,
+    "type": "СОЧ",
+    "date": "2026-03-24"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "История",
+    "grade": 5,
+    "type": "Классная работа",
+    "date": "2026-03-25"
+  },
+  {
+    "student_id": "002",
+    "student_name": "Мария",
+    "subject": "История",
+    "grade": 4,
+    "type": "СОЧ",
+    "date": "2026-03-28"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Математика",
+    "grade": 3,
+    "type": "СОР",
+    "date": "2026-03-03"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Математика",
+    "grade": 3,
+    "type": "СОЧ",
+    "date": "2026-03-06"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Математика",
+    "grade": 2,
+    "type": "ДЗ",
+    "date": "2026-03-07"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Математика",
+    "grade": 3,
+    "type": "СОР",
+    "date": "2026-03-10"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Математика",
+    "grade": 2,
+    "type": "ДЗ",
+    "date": "2026-03-15"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Математика",
+    "grade": 1,
+    "type": "ДЗ",
+    "date": "2026-03-18"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Математика",
+    "grade": 3,
+    "type": "Классная работа",
+    "date": "2026-03-19"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Математика",
+    "grade": 2,
+    "type": "СОЧ",
+    "date": "2026-03-24"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Математика",
+    "grade": 3,
+    "type": "СОР",
+    "date": "2026-03-27"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Математика",
+    "grade": 2,
+    "type": "СОР",
+    "date": "2026-03-30"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Физика",
+    "grade": 5,
+    "type": "СОЧ",
+    "date": "2026-03-03"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Физика",
+    "grade": 2,
+    "type": "СОР",
+    "date": "2026-03-04"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Физика",
+    "grade": 2,
+    "type": "СОЧ",
+    "date": "2026-03-07"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Физика",
+    "grade": 2,
+    "type": "Классная работа",
+    "date": "2026-03-10"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Физика",
+    "grade": 5,
+    "type": "СОР",
+    "date": "2026-03-15"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Физика",
+    "grade": 3,
+    "type": "СОЧ",
+    "date": "2026-03-17"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Физика",
+    "grade": 3,
+    "type": "СОР",
+    "date": "2026-03-21"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Физика",
+    "grade": 3,
+    "type": "СОЧ",
+    "date": "2026-03-22"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Физика",
+    "grade": 3,
+    "type": "Классная работа",
+    "date": "2026-03-25"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Физика",
+    "grade": 3,
+    "type": "СОР",
+    "date": "2026-03-30"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Информатика",
+    "grade": 4,
+    "type": "СОЧ",
+    "date": "2026-03-02"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Информатика",
+    "grade": 2,
+    "type": "СОР",
+    "date": "2026-03-06"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Информатика",
+    "grade": 2,
+    "type": "СОР",
+    "date": "2026-03-09"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Информатика",
+    "grade": 3,
+    "type": "ДЗ",
+    "date": "2026-03-10"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Информатика",
+    "grade": 4,
+    "type": "Классная работа",
+    "date": "2026-03-14"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Информатика",
+    "grade": 1,
+    "type": "СОЧ",
+    "date": "2026-03-18"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Информатика",
+    "grade": 3,
+    "type": "Классная работа",
+    "date": "2026-03-19"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Информатика",
+    "grade": 3,
+    "type": "СОР",
+    "date": "2026-03-22"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Информатика",
+    "grade": 2,
+    "type": "ДЗ",
+    "date": "2026-03-26"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "Информатика",
+    "grade": 1,
+    "type": "Классная работа",
+    "date": "2026-03-30"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "История",
+    "grade": 3,
+    "type": "СОР",
+    "date": "2026-03-02"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "История",
+    "grade": 5,
+    "type": "Классная работа",
+    "date": "2026-03-04"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "История",
+    "grade": 5,
+    "type": "СОР",
+    "date": "2026-03-07"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "История",
+    "grade": 3,
+    "type": "СОЧ",
+    "date": "2026-03-10"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "История",
+    "grade": 3,
+    "type": "ДЗ",
+    "date": "2026-03-14"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "История",
+    "grade": 2,
+    "type": "ДЗ",
+    "date": "2026-03-16"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "История",
+    "grade": 2,
+    "type": "СОР",
+    "date": "2026-03-19"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "История",
+    "grade": 4,
+    "type": "СОР",
+    "date": "2026-03-23"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "История",
+    "grade": 2,
+    "type": "СОР",
+    "date": "2026-03-26"
+  },
+  {
+    "student_id": "003",
+    "student_name": "Иван",
+    "subject": "История",
+    "grade": 1,
+    "type": "ДЗ",
+    "date": "2026-03-28"
+  }
+]

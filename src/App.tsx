@@ -3,7 +3,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'; 
+import { MOCK_STUDENT } from './mockData';
+import { getStudentDashboard } from './api'; 
+
 import { 
   User as UserIcon, 
   LayoutDashboard, 
@@ -227,9 +230,64 @@ export default function App() {
   const [grades, setGrades] = useState<SubjectGrade[]>([]);
   const [aiAdvice, setAiAdvice] = useState('');
   const [isAiLoading, setIsAiLoading] = useState(false);
+  const [studentInfo, setStudentInfo] = useState<any>(null)
   const [isRegistered, setIsRegistered] = useState(() => !!localStorage.getItem('user'));
+  const [studentData, setStudentData] = useState<any>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    // Имитируем запрос к серверу
+    const fetchMockData = async () => {
+      setIsLoading(true);
+      
+      // Создаем искусственную паузу в 1 секунду
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      // Кладём данные из файла в стейт, как будто они пришли из интернета
+      setStudentData(MOCK_STUDENT);
+      setIsLoading(false);
+    };
+    fetchMockData();
+  }, []);
   const t = translations[lang] || translations.ru;
+
+  const currentUser = JSON.parse(localStorage.getItem('user') || '{}');
+
+  useEffect(() => {
+    if (currentUser.id && currentUser.role === 'student') {
+      loadDashboard(currentUser.id);
+    }
+  }, []);
+
+  const loadDashboard = async (id: string) => {
+    setIsLoading(true);
+    try {
+      const data = await getStudentDashboard(id);
+      setStudentData(data);
+    } catch (err) {
+      alert("Не удалось загрузить данные с бэкенда");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const fetchGrades = async (studentId: string) => {
+  try {
+    const res = await fetch(`http://127.0.0.1:8000/student/${studentId}`);
+    
+    if (!res.ok) throw new Error("Ошибка при загрузке данных");
+
+    const data = await res.json(); 
+    
+    setGrades(data.grades);       
+    setAiAdvice(data.ai_insight); 
+    if (setStudentInfo) setStudentInfo(data); 
+    
+    console.log("Данные успешно получены:", data);
+  } catch (err) {
+    console.error("Ошибка связи с FastAPI:", err);
+  }
+};
 
   const translateSubject = (subject: string) => {
     const key = subject.toLowerCase();
@@ -280,46 +338,20 @@ export default function App() {
   useEffect(() => {
     fetchNews();
     if (role === 'student' || role === 'parent') {
-      fetchGrades('1');
+      fetchGrades('001');
     }
   }, [role, lang]);
 
   const fetchNews = async () => {
-    try {
-      const res = await fetch(`/api/news?lang=${lang}`);
-      const data = await res.json();
-      setNews(data);
-    } catch (err) {
-      console.error("Failed to fetch news", err);
-    }
-  };
-
-  const fetchGrades = async (studentId: string) => {
-    try {
-      const res = await fetch(`/api/grades/${studentId}`);
-      const data = await res.json();
-      setGrades(data);
-    } catch (err) {
-      console.error("Failed to fetch grades", err);
-    }
-  };
-
-  const getAiAdvice = async () => {
-    setIsAiLoading(true);
-    try {
-      const res = await fetch('/api/ai-advice', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ studentId: user?.id, lang })
-      });
-      const data = await res.json();
-      setAiAdvice(data.advice);
-    } catch (err) {
-      console.error("Failed to fetch AI advice", err);
-    } finally {
-      setIsAiLoading(false);
-    }
-  };
+  try {
+    const res = await fetch(`http://127.0.0.1:8000/news?lang=${lang}`);
+    const data = await res.json();
+    setNews(data);
+  } catch (err) {
+    console.error("Failed to fetch news", err);
+    setNews([]); 
+  }
+};
 
   const handleLogout = () => {
     localStorage.removeItem('user');

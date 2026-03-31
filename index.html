@@ -1,13 +1,139 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akbobek SC | Smart Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top right, #1e1b4b, #020617);
+            min-height: 100vh;
+            color: #f8fafc;
+        }
 
+        /* Эффект матового стекла */
+        .glass {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        .input-focus:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Плавное появление */
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-10">
+    <div class="max-w-5xl mx-auto">
+        <header class="mb-12 text-center md:text-left">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tighter uppercase italic">
+                Aqbobek <span class="gradient-text">SC</span>
+            </h1>
+            <p class="text-slate-400 mt-2 font-medium tracking-wide">Система интеллектуального мониторинга успеваемости</p>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div class="lg:col-span-5 space-y-6">
+                <div class="glass rounded-3xl p-8">
+                    <label class="block text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">Вход в систему</label>
+                    <input id="studentId" type="text" placeholder="Введите ваш ID..." 
+                           class="w-full bg-slate-900/50 border border-slate-700 p-4 rounded-2xl mb-4 outline-none input-focus transition-all text-white">
+                    <button onclick="loadData()" 
+                            class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-2xl transition-all shadow-lg shadow-blue-900/20 active:scale-95">
+                        АНАЛИЗИРОВАТЬ ДАННЫЕ
+                    </button>
+                </div>
+
+                <div id="ai-card" class="glass rounded-3xl p-8 border-l-4 border-emerald-500 hidden fade-in">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="flex h-3 w-3 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-emerald-400">AI Наставник</h3>
+                    </div>
+                    <p id="ai-insight" class="text-lg leading-relaxed text-slate-200 italic font-light">
+                        "Ваш персональный анализ готов..."
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7">
+                <div id="data-table" class="glass rounded-3xl p-8 h-full hidden fade-in">
+                    <div class="flex justify-between items-center mb-8">
+                        <h3 class="text-xl font-bold uppercase tracking-widest text-blue-400">История достижений</h3>
+                        <span class="text-xs bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full border border-blue-500/30">Активен</span>
+                    </div>
+                    
+                    <div id="grades-list" class="grid gap-4">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function loadData() {
+            const id = document.getElementById('studentId').value;
+            const aiCard = document.getElementById('ai-card');
+            const aiText = document.getElementById('ai-insight');
+            const table = document.getElementById('data-table');
+            const list = document.getElementById('grades-list');
+
+            if (!id) return alert("Введите ID!");
+
+            try {
+                const response = await fetch(`http://127.0.0.1:8000/student/${id}`);
+                const data = await response.json();
+
+                // Показываем блоки
+                aiCard.classList.remove('hidden');
+                table.classList.remove('hidden');
+                
+                // Текст AI
+                aiText.innerText = data.ai_insight;
+
+                // Список оценок
+                list.innerHTML = ''; 
+                data.grades.forEach(grade => {
+                    const item = document.createElement('div');
+                    // Стилизуем каждую строку оценки как карточку
+                    item.className = "flex justify-between items-center bg-slate-800/40 p-5 rounded-2xl border border-white/5 hover:border-blue-500/50 transition-all";
+                    item.innerHTML = `
+                        <div>
+                            <p class="text-xs font-bold text-slate-500 uppercase tracking-tighter">${grade.type}</p>
+                            <p class="text-lg font-semibold">${grade.subject}</p>
+                        </div>
+                        <div class="text-3xl font-black ${grade.grade >= 4 ? 'text-emerald-400' : 'text-rose-400'}">
+                            ${grade.grade}
+                        </div>
+                    `;
+                    list.appendChild(item);
+                });
+
+            } catch (error) {
+                console.error("Ошибка:", error);
+                alert("Ошибка связи с сервером.");
+            }
+        }
+    </script>
+</body>
+</html>
