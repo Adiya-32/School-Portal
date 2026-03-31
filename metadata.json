@@ -1,0 +1,5 @@
+{
+  "name": "Aqbobek Lyceum Portal",
+  "description": "Школьный портал с системой ролей, AI-наставником, электронным журналом и режимом киоска.",
+  "requestFramePermissions": []
+}
