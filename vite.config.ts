@@ -7,7 +7,7 @@ export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
     // ДОБАВЬ ЭТУ СТРОКУ НИЖЕ:
-    base: '/aqbobek-portal/', 
+    base: '/School-Portal/', 
     
     plugins: [react(), tailwindcss()],
     define: {
